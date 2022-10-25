@@ -1,0 +1,11 @@
+.proposition{
+    cursor: pointer;
+    min-height: 50px;
+}
+
+.proposition:hover{
+    transform: scale(1.01);
+    transition: all 0.3s ease-out;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.379);
+    border: 1px solid #f8f4f4;
+}

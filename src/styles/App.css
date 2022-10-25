@@ -1,0 +1,30 @@
+
+.App {
+  /*background-color: red;*/
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-box{
+  background-color: antiquewhite;
+  width: 80vw;
+  max-width: 800px;
+  min-height: 200px;
+  text-align: center;
+  
+  padding: 3% 30px 3% 30px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer{
+  text-align: center;
+  color: white;
+}
