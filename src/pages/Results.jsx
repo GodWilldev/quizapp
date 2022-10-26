@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
-import { firstQuestion } from '../features/curQuestSlice';
-import { scoreTozero } from '../features/scoreSlice';
-import {toggleStartQuiz} from '../features/startQuizSlice';
+import { firstQuestion } from '../states/slices/curQuestSlice';
+import { scoreTozero } from '../states/slices/scoreSlice';
+import {toggleStartQuiz} from '../states/slices/startQuizSlice';
 
 
 function Results({rate}) {
@@ -25,7 +25,7 @@ function Results({rate}) {
         <div className='mt-4'>
             <p>You have a succes rate of <span className="text-white h5">{rate}%</span></p>
         </div>
-        <div className='d-flex justify-content-between mt-4'>
+        <div className='d-flex justify-content-betweestates/slicesn mt-4'>
             <button type='button' className='btn btn-primary' onClick={restart}>Wanna Restart!</button>
             <button type='button' className='btn btn-primary' onClick={goToMainMenu}>Go to Main Menu!</button>
         </div>

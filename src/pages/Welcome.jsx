@@ -1,7 +1,7 @@
 import {useDispatch } from 'react-redux';
 
-import {putQuestions} from '../features/questionsSlice';
-import {toggleStartQuiz} from '../features/startQuizSlice';
+import {putQuestions} from '../states/slices/questionsSlice';
+import {toggleStartQuiz} from '../states/slices/startQuizSlice';
 
 import musicQuest  from '../datas/questions/music';
 import progQuest from '../datas/questions/programming';

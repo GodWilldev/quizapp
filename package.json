@@ -50,7 +50,9 @@
     "redux-devtools": "^3.7.0",
     "wait-on": "^6.0.1"
   },
+  "homepage": "./",
   "build": {
+    "appId" : "my_app_id",
     "productName": "QuizIt",
     
     "win": {

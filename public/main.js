@@ -1,10 +1,11 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
+const path = require('path');
 
 //const path = require('path')
 //var {PythonShell} =  require('python-shell');
 //const isDev = require('electron-is-dev')
 
-require('@electron/remote/main').initialize()
+require('@electron/remote/main').initialize();
 
 function createWindow() {
   // Create the browser window.
@@ -19,13 +20,11 @@ function createWindow() {
   })
   mainWindow.removeMenu();
 
+  //mainWindow.loadFile(path.join(__dirname, '../build/index.html'))
+  
   mainWindow.loadURL(
-    'file://'+__dirname + '../build/index.html'
-    /*
-    isDev
-      ? 'http://localhost:3000'
-      : `file://${path.join(__dirname, '../build/index.html')}`
-      */
+    //'http://localhost:3000'
+    `file://${path.join(__dirname, '../build/index.html')}`
   );
 
   mainWindow.webContents.on('new-window', function(e, url) {

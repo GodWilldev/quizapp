@@ -1,11 +1,10 @@
 import $ from 'jquery';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { incrementQuestion } from '../features/curQuestSlice';
-import { incrementScore } from '../features/scoreSlice';
+import { incrementQuestion } from '../states/slices/curQuestSlice';
+import { incrementScore } from '../states/slices/scoreSlice';
 
 import Proposition from "./Proposition"
-
 
 function Question({question}) {
     //global state
